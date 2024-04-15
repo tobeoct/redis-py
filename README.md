@@ -121,3 +121,23 @@ The Redis server is a high-performance, in-memory data structure store that serv
 
 https://codingchallenges.fyi/challenges/challenge-redis
 https://redis.io/docs/reference/protocol-spec/
+
+
+PHASE 1: Developing a single node redis Lite server
+
+Basic Implementation using a TDD approach
+- Run a server that listens on a port through tcp connections for messages from a redis-cli
+- The supported protocol for receving these messages is the RESP Protocol
+- The supported commands are PING, ECHO, GET, SET, DELETE
+- Handle multiple concurrent clients
+- Build the expiration logic
+- Optimize for performance: Handle 1000000 requests per second
+- Benchmark your implementation and test thoroughly
+
+PHASE 2: Pub/Sub
+
+PHASE 3: Development of a Redis Server Cluster
+
+- Implementing the sharding logic
+- Replication
+- Disk optimization
